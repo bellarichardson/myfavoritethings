@@ -17,8 +17,12 @@ function preload(){
   strudel = loadImage('/img/strudel.png');
 }
 
+function windowResized(){
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
-  createCanvas(654, 374);
+  createCanvas(981, 561);
   background('#68DDC4');
   frameRate(12);
 }
@@ -27,59 +31,66 @@ function draw() {
   background(backgroundImage);
   
   fill(255); 
-  textSize(30);
-  text('cream-colored ponies',25,45);
+  textSize(40);
+  //text('cream-colored ponies',25,45);
   
-  text('& crisp apple strudels',340,345);
+  //text('& crisp apple strudels',340,345);
   
   mouseDragged();
   
 //PONY
-  image(pony, ponyX, ponyY, 207, 261);
+  image(pony, ponyX, ponyY, 310.5, 391.5);
   
   if ((ponyX > 77) && (ponyX < 270)) {
     if ((ponyY > 68) && (ponyY < 308)) {
-      fill(0);
-      text("Congrats", 100, 100);
+      fill(255);
+      text("cream-colored ponies", 50.5, 64);
       
     }
   }
 //STRUDEL
-  image(strudel, strudelX, strudelY, 233, 108);
+  image(strudel, strudelX, strudelY, 349.5, 162);
   
   if ((strudelX > 343) && (strudelX < 563)) {
     if ((strudelY > 138) && (strudelY < 230)) {
-      fill(0);
-      text("Congrats", 100, 100);
+      fill(255);
+      text("& crisp apple strudels", 542, 506);
       
     }
   }
   
+  //MOUSE:
+  strokeWeight(0);
+  frameRate(12);
+  fill('#748a8a');
+  text("X: "+mouseX, 0, height/4);
+  text("Y: "+mouseY, 0, height/2); 
+
 }
 
 function mousePressed() { //ChatGPT helped with the code below
   // Check if mouse is inside pony image
-  if (mouseX >= ponyX && mouseX <= ponyX + 207 &&
-      mouseY >= ponyY && mouseY <= ponyY + 261) {
+  if (mouseX >= ponyX && mouseX <= ponyX + 310.5 &&
+      mouseY >= ponyY && mouseY <= ponyY + 391.5) {
     draggingPony = true;
   }
 
   // Check if mouse is inside strudel image
-  if (mouseX >= strudelX && mouseX <= strudelX + 233 &&
-      mouseY >= strudelY && mouseY <= strudelY + 108) {
+  if (mouseX >= strudelX && mouseX <= strudelX + 349.5 &&
+      mouseY >= strudelY && mouseY <= strudelY + 162) {
     draggingStrudel = true;
   }
 }
 
 function mouseDragged() {
   if (draggingPony) {
-    ponyX = mouseX - 207 / 2;
-    ponyY = mouseY - 261 / 2;
+    ponyX = mouseX - 310.5 / 2;
+    ponyY = mouseY - 391.5 / 2;
   }
 
   if (draggingStrudel) {
-    strudelX = mouseX - 233 / 2;
-    strudelY = mouseY - 108 / 2;
+    strudelX = mouseX - 349.5 / 2;
+    strudelY = mouseY - 162 / 2;
   }
 }
 
@@ -87,3 +98,6 @@ function mouseReleased() {
   draggingPony = false;
   draggingStrudel = false;
 }
+
+
+

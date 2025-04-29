@@ -4,14 +4,18 @@ function preload(){
   backgroundImage = loadImage('/img/combined/kettlesnmittens.png');
 }
 
+function windowResized(){
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
-  createCanvas(654, 374);
+  createCanvas(981, 561);
 }
 
 function draw() {
   background(backgroundImage);
   
-  textSize(30);
+  textSize(40);
   text('bright copper kettles',25,45);
   
   text('& warm woolen mittens',320,350);

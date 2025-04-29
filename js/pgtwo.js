@@ -6,10 +6,12 @@ function preload(){
   rainwhiskers = loadImage('/img/combined/rainwhiskers.png');
 }
 
+function windowResized(){
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
-  createCanvas(654, 374);
-  
-  
+  createCanvas(981, 561);
 }
 
 function draw() {
@@ -27,5 +29,5 @@ function draw() {
 function drop(){
   
   
-  image(rainwhiskers,0,-mouseX/3, 670,385);
+  image(rainwhiskers,0,-mouseX/3, 1005,577.5);
 }

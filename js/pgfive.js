@@ -8,23 +8,27 @@ function preload(){
   backgroundImage = loadImage('/img/combined/hills.png');
 }
 
-function setup() {
-  createCanvas(654, 374);
-}
+function windowResized(){
+    resizeCanvas(windowWidth, windowHeight);
+  }
+  
+  function setup() {
+    createCanvas(981, 561);
+  }
 
 function draw() {
   background(backgroundImage);
   
   fill(255); 
-  textSize(30); 
+  textSize(40); 
   text('these are a few of my favorite', 25, 200);
-  text(things[index], 430, 200);
+  text(things[index], 560, 200);
 }
 
 function mousePressed() {
   index = index + 1;
 
-  //if (index == things.length) {
-    //window.open('next page');
-  //}
+  if (index == things.length) {
+    window.open('/pgsix.html');
+  }
 }

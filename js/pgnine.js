@@ -4,8 +4,12 @@ function preload(){
   backgroundImage = loadImage('/img/combined/hills.png');
 }
 
+function windowResized(){
+  resizeCanvas(windowWidth, windowHeight);
+}
+
 function setup() {
-  createCanvas(654, 374);
+  createCanvas(981, 561);
 }
 
 function draw() {
