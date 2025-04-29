@@ -1,7 +1,7 @@
 let hills;
 
 function preload(){
-  hills = loadImage('/img/combined/hills.png');
+  hills = loadImage('../img/combined/hills.png');
 }
 
 function windowResized(){

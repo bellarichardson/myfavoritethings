@@ -1,3 +1,6 @@
+@import url("https://use.typekit.net/jts0xdz.css");
+
+
 html, body {
   margin: 0;
   padding: 0;
@@ -9,7 +12,11 @@ canvas {
 }
 
 .notes{
-  height:60px;
+  position: absolute;
+  right: 10%; 
+  top: 76%; 
+  width: 7%; 
+  z-index: 5; 
 }
 
 #one{
@@ -40,15 +47,4 @@ canvas {
   background-color: #B1D374;
 }
 
-h1{
-  font-family: filmotype-carmen, serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.top{
-  font-variation-settings: "wdth" 100, "wght" 400;
-}
-.bottom{
-  font-variation-settings: "wdth" 100, "wght" 400;
-}
 

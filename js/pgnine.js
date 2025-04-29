@@ -1,7 +1,7 @@
 let backgroundImage;
 
 function preload(){
-  backgroundImage = loadImage('/img/combined/hills.png');
+  backgroundImage = loadImage('../img/combined/hills.png');
 }
 
 function windowResized(){
@@ -9,9 +9,9 @@ function windowResized(){
 }
 
 function setup() {
-  createCanvas(981, 561);
+  createCanvas(981, windowHeight);
 }
 
 function draw() {
-  background(backgroundImage);
+  image(backgroundImage,0,height/6.5,981,561);
 }

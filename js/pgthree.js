@@ -1,7 +1,7 @@
 let backgroundImage;
 
 function preload(){
-  backgroundImage = loadImage('/img/combined/kettlesnmittens.png');
+  backgroundImage = loadImage('../img/combined/kettlesnmittens.png');
 }
 
 function windowResized(){
@@ -9,16 +9,18 @@ function windowResized(){
 }
 
 function setup() {
-  createCanvas(981, 561);
+  createCanvas(981, windowHeight);
 }
 
 function draw() {
-  background(backgroundImage);
+  background('#C7F6F2');
+  image(backgroundImage,0,height/6.5,981,561);
   
+  textFont('scale-variable'); 
   textSize(40);
-  text('bright copper kettles',25,45);
+  text('bright copper kettles',10,windowHeight/9);
   
-  text('& warm woolen mittens',320,350);
+  text('& warm woolen mittens',600,windowHeight/1.1);
   
   if(mouseX > 600){
     fill ('#CC5500');
