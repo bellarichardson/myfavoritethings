@@ -11,3 +11,44 @@ canvas {
 .notes{
   height:60px;
 }
+
+#one{
+  background-color: #B1D374;
+}
+#two{
+  background-color: #C9D6AC;
+}
+#three{
+  background-color: #C7F6F2;
+}
+#four{
+  background-color: #6B4360;
+}
+#five{
+  background-color: #B1D374;
+}
+#six{
+  background-color: #21825C;
+}
+#seven{
+  background-color: #5A81BA;
+}
+#eight{
+  background-color: #753FD3;
+}
+#nine{
+  background-color: #B1D374;
+}
+
+h1{
+  font-family: filmotype-carmen, serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.top{
+  font-variation-settings: "wdth" 100, "wght" 400;
+}
+.bottom{
+  font-variation-settings: "wdth" 100, "wght" 400;
+}
+
