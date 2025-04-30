@@ -25,6 +25,8 @@ function draw() {
   fill('#fdf5e2'); 
   textSize(40); 
   text('these are a few of my favorite', 40, windowHeight/2);
+  
+  fill('#F29F3B');
   text(things[index], 620, windowHeight/2);
 }
 
