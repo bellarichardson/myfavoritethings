@@ -1,7 +1,7 @@
 let backgroundImage;
 
 function preload(){
-  backgroundImage = loadImage('../img/combined/kettlesnmittens.png');
+  backgroundImage = loadImage('../kettlesnmittens.png');
 }
 
 function windowResized(){
@@ -20,7 +20,7 @@ function draw() {
   textSize(40);
   text('bright copper kettles',10,windowHeight/9);
   
-  text('& warm woolen mittens',600,windowHeight/1.1);
+  text('& warm woolen mittens',500,windowHeight/1.1);
   
   if(mouseX > 600){
     fill ('#CC5500');

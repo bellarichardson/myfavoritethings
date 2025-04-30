@@ -3,8 +3,8 @@ let rainwhiskers;
 let pfont;
 
 function preload(){
-  backgroundImage = loadImage('../img/combined/sansrainwhiskers.png');
-  rainwhiskers = loadImage('../img/combined/rainwhiskers.png');
+  backgroundImage = loadImage('../sansrainwhiskers.png');
+  rainwhiskers = loadImage('../rainwhiskers.png');
 }
 
 function windowResized(){
@@ -21,7 +21,7 @@ function draw() {
   image(backgroundImage, 0,height/6.5,981,561);
   
   textFont('scale-variable');
-  fill(255); 
+  fill('#fdf5e2'); 
   textSize(40);
   
   drop();

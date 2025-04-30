@@ -5,7 +5,7 @@ var index = 0;
 let backgroundImage;
 
 function preload(){
-  backgroundImage = loadImage('../img/combined/hills.png');
+  backgroundImage = loadImage('../hills.png');
 }
 
 function windowResized(){
@@ -17,13 +17,15 @@ function windowResized(){
   }
 
 function draw() {
+  background('#B1D374');
   image(backgroundImage,0,height/6.5,981,561);
   
+  
   textFont('scale-variable');
-  fill(255); 
+  fill('#fdf5e2'); 
   textSize(40); 
-  text('these are a few of my favorite', 25, 200);
-  text(things[index], 560, 200);
+  text('these are a few of my favorite', 40, windowHeight/2);
+  text(things[index], 620, windowHeight/2);
 }
 
 function mousePressed() {

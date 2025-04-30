@@ -1,7 +1,7 @@
 let backgroundImage;
 
 function preload(){
-  backgroundImage = loadImage('../img/combined/bellsschnitzel.png');
+  backgroundImage = loadImage('../bellsschnitzel.png');
 }
 
 function windowResized(){
@@ -13,12 +13,13 @@ function setup() {
 }
 
 function draw() {
+  background('#5A81BA');
   image(backgroundImage,0,height/6.5,981,561);
   
   textFont('scale-variable');
-  fill(255); 
+  fill('#fdf5e2'); 
   textSize(40);
   text('doorbells & sleighbells',10,windowHeight/9);
   
-  text('& schnitzel with noodles',600,windowHeight/1.1);
+  text('& schnitzel with noodles',500,windowHeight/1.1);
 }

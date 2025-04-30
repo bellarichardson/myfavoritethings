@@ -12,9 +12,9 @@ let draggingPony = false;
 let draggingStrudel = false;
 
 function preload(){
-  backgroundImage = loadImage('../img/combined/sansponystrudel.png');
-  pony = loadImage('../img/pony.png');
-  strudel = loadImage('../img/strudel.png');
+  backgroundImage = loadImage('../sansponystrudel.png');
+  pony = loadImage('../pony.png');
+  strudel = loadImage('../strudel.png');
 }
 
 function windowResized(){
@@ -23,15 +23,16 @@ function windowResized(){
 
 function setup() {
   createCanvas(981, windowHeight); //width:561
-  background('#68DDC4');
+  
   frameRate(12);
 }
 
 function draw() {
+  background('#21825C');
   image(backgroundImage,0,height/6.5,981,561);
   
   textFont('scale-variable');
-  fill(255); 
+  fill('#fdf5e2'); 
   textSize(40);
   //text('cream-colored ponies',25,45);
   
@@ -42,8 +43,8 @@ function draw() {
 //PONY
   image(pony, ponyX, ponyY, 310.5, 391.5);
   
-  if ((ponyX > 77) && (ponyX < 270)) {
-    if ((ponyY > 68) && (ponyY < 308)) {
+  if ((ponyX > 77) && (ponyX < 425)) {
+    if ((ponyY > 200) && (ponyY < 615)) {
       fill(255);
       text("cream-colored ponies", 10,windowHeight/9);
       
@@ -52,20 +53,20 @@ function draw() {
 //STRUDEL
   image(strudel, strudelX, strudelY, 349.5, 162);
   
-  if ((strudelX > 343) && (strudelX < 563)) {
-    if ((strudelY > 138) && (strudelY < 230)) {
+  if ((strudelX > 500) && (strudelX < 865)) {
+    if ((strudelY > 312) && (strudelY < 494)) {
       fill(255);
-      text("& crisp apple strudels", 600,windowHeight/1.1);
+      text("& crisp apple strudels", 550,windowHeight/1.1);
       
     }
   }
   
   //MOUSE:
-  strokeWeight(0);
-  frameRate(12);
-  fill('#748a8a');
-  text("X: "+mouseX, 0, height/4);
-  text("Y: "+mouseY, 0, height/2); 
+  //strokeWeight(0);
+  //frameRate(12);
+  //fill('#748a8a');
+  //text("X: "+mouseX, 0, height/4);
+  //text("Y: "+mouseY, 0, height/2); 
 
 }
 

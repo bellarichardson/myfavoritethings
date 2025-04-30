@@ -1,8 +1,8 @@
 let backgroundImage;
 
 function preload(){
-  backgroundImage = loadImage('../img/combined/package.png');
-  package = loadImage('../img/paperpackage.png');
+  backgroundImage = loadImage('../package.png');
+  package = loadImage('../paperpackage.png');
 }
 
 function windowResized(){
@@ -11,6 +11,7 @@ function windowResized(){
 
 function setup() {
   createCanvas(981, windowHeight);
+  background('#6B4360');
   image(backgroundImage,0,height/6.5,981,561);
   frameRate(30);
 }
@@ -20,9 +21,9 @@ function draw() {
   image(package,mouseX-100,mouseY-75);
   
   textFont('scale-variable');
-  fill(255); 
+  fill('#6B4360'); 
   textSize(40);
   text('brown paper packages',10,windowHeight/9);
   
-  text('tied up with string',600,windowHeight/1.1);
+  text('tied up with string',620,windowHeight/1.1);
 }
