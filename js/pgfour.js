@@ -11,7 +11,7 @@ function windowResized(){
 
 function setup() {
   createCanvas(981, windowHeight);
-  background('#6B4360');
+  background('#EFEAB9'); //#6B4360
   image(backgroundImage,0,height/6.5,981,561);
   frameRate(30);
 }
@@ -21,7 +21,7 @@ function draw() {
   image(package,mouseX-100,mouseY-75);
   
   textFont('scale-variable');
-  fill('#6B4360'); 
+  fill('#EFEAB9'); 
   textSize(40);
   text('brown paper packages',10,windowHeight/9);
   
