@@ -12,9 +12,9 @@ let draggingPony = false;
 let draggingStrudel = false;
 
 function preload(){
-  backgroundImage = loadImage('../sansponystrudel.png');
-  pony = loadImage('../pony.png');
-  strudel = loadImage('../strudel.png');
+  backgroundImage = loadImage('sansponystrudel.png');
+  pony = loadImage('pony.png');
+  strudel = loadImage('strudel.png');
 }
 
 function windowResized(){

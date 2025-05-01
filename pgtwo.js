@@ -3,8 +3,8 @@ let rainwhiskers;
 let pfont;
 
 function preload(){
-  backgroundImage = loadImage('../sansrainwhiskers.png');
-  rainwhiskers = loadImage('../rainwhiskers.png');
+  backgroundImage = loadImage('sansrainwhiskers.png');
+  rainwhiskers = loadImage('rainwhiskers.png');
 }
 
 function windowResized(){

@@ -5,7 +5,7 @@ var index = 0;
 let backgroundImage;
 
 function preload(){
-  backgroundImage = loadImage('../hills.png');
+  backgroundImage = loadImage('hills.png');
 }
 
 function windowResized(){

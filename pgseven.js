@@ -1,7 +1,7 @@
 let backgroundImage;
 
 function preload(){
-  backgroundImage = loadImage('../bellsschnitzel.png');
+  backgroundImage = loadImage('bellsschnitzel.png');
 }
 
 function windowResized(){

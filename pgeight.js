@@ -1,8 +1,8 @@
 let backgroundImage;
 
 function preload(){
-  backgroundImage = loadImage('../geesemoon.png');
-  geese = loadImage('../geese.png');
+  backgroundImage = loadImage('geesemoon.png');
+  geese = loadImage('geese.png');
 }
 
 function windowResized(){

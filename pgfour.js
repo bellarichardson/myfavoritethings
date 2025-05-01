@@ -1,8 +1,8 @@
 let backgroundImage;
 
 function preload(){
-  backgroundImage = loadImage('../package.png');
-  package = loadImage('../paperpackage.png');
+  backgroundImage = loadImage('package.png');
+  package = loadImage('paperpackage.png');
 }
 
 function windowResized(){
