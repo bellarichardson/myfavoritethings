@@ -17,7 +17,7 @@ function windowResized(){
   }
 
 function draw() {
-  background('#B1D374');
+  background('#fdf5e2');
   image(backgroundImage,0,height/6.5,981,561);
   
   
@@ -34,6 +34,6 @@ function mousePressed() {
   index = index + 1;
 
   if (index == things.length) {
-    window.open('/pgsix.html', '_self');
+    window.open('pgsix.html', '_self');
   }
 }
