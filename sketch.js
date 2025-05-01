@@ -8,7 +8,7 @@ const amplitude = 30;
 const verticalLetterSpacing = 10;
 
 function preload(){
-  hills = loadImage('hills.png');
+  hills = loadImage("hills.png");
 }
 
 function windowResized(){
