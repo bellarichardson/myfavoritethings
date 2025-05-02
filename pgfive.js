@@ -17,7 +17,7 @@ function windowResized(){
   }
 
 function draw() {
-  background('#fdf5e2');
+  background('#F29F3B');
   image(backgroundImage,0,height/6.5,981,561);
   
   
