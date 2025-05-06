@@ -6,7 +6,9 @@ var currentImage;
 let string = `doorbells & sleighbells`;
 let string2 = '& schnitzel with noodles';
 
-let currentCharacter = 0;
+let currentCharacter1 = 0;
+let currentCharacter2 = 0;
+let startString2 = false;
 
 function preload(){
   backgroundImage = loadImage('bellsschnitzel.png');
@@ -30,7 +32,9 @@ function windowResized(){
 function setup() {
   createCanvas(981, windowHeight);
 
-  
+  setTimeout(() => {
+    startString2 = true;
+  }, 5400);
 }
 
 function draw() {
@@ -40,64 +44,46 @@ function draw() {
   textFont('scale-variable');
   fill('#fdf5e2'); 
   textSize(40);
-  //text('doorbells & sleighbells',10,windowHeight/9);
-  
-  //text('& schnitzel with noodles',500,windowHeight/1.1);
 
   image(currentImage, 0, height/6.5, 981,561);
 
-  
-  let currentString = string.substring(0, currentCharacter);
-  push();
-  //textSize(12);
-  //textFont(`Courier`);
-  //textAlign(LEFT, TOP);
-  text(currentString, 10, windowHeight/9);
-  pop();
+  let currentString1 = string.substring(0, currentCharacter1);
+  text(currentString1, 10, windowHeight/9);
+  if (currentCharacter1 < string.length) {
+    currentCharacter1 += 0.1;
+  }
 
-  
-  let currentString2 = string2.substring(0, currentCharacter);
-  push();
-  //textSize(12);
-  //textFont(`Courier`);
-  //textAlign(LEFT, TOP);
-  text(currentString2, 500, windowHeight/1.1);
-  pop();
-
-  currentCharacter += 0.1;
+  if (startString2) {
+    let currentString2 = string2.substring(0, currentCharacter2);
+    text(currentString2, 500, windowHeight/1.1);
+    if (currentCharacter2 < string2.length) {
+      currentCharacter2 += 0.1;
+    }
+  }
 }
 
 function mousePressed() {
-
   if (plates == 0) {
     currentImage = bite1;
-    console.log("bite1");
   } else if (plates == 1) {
     currentImage = bite2;
-    console.log("bite2");
   } else if (plates == 2) {
     currentImage = bite3;
-    console.log("bite3");
   } else if (plates == 3) {
     currentImage = bite4;
-    console.log("bite4");
   } else if (plates == 4) {
     currentImage = bite5;
-    console.log("bite5");
   } else if (plates == 5) {
     currentImage = bite6;
-    console.log("bite6");
   } else if (plates == 6) {
     currentImage = bite7;
-    console.log("bite7");
   } else if (plates == 7) {
     currentImage = bite8;
-    console.log("bite8");
   } else {
     currentImage = nobite;
     plates = -1;
   }
   plates = plates + 1;
-
 }
+
 
