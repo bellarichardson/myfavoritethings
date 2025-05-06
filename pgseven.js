@@ -34,7 +34,7 @@ function setup() {
 
   setTimeout(() => {
     startString2 = true;
-  }, 5400);
+  }, 2730);
 }
 
 function draw() {
@@ -50,14 +50,14 @@ function draw() {
   let currentString1 = string.substring(0, currentCharacter1);
   text(currentString1, 10, windowHeight/9);
   if (currentCharacter1 < string.length) {
-    currentCharacter1 += 0.1;
+    currentCharacter1 += 0.2;
   }
 
   if (startString2) {
     let currentString2 = string2.substring(0, currentCharacter2);
     text(currentString2, 500, windowHeight/1.1);
     if (currentCharacter2 < string2.length) {
-      currentCharacter2 += 0.1;
+      currentCharacter2 += 0.2;
     }
   }
 }
