@@ -52,17 +52,17 @@ function draw() {
 
   //fav things
   //TOP
-  image(geese, width/10, height/80,715/5,553/5);
-  image(doorbell, width/4,height/80,204/5,203/5);
-  image(sleigh,width/3.5,height/80,528/5,151/5);
-  image(strudel,width/3,height/80,475/5,221/5);
-  image(rose,width/1.5,height/80,389/5,698/5);
-  image(kettle,width/1.2,height/80,545/5,689/5);
+  image(geese, 0, height/80,715/5.5,553/5.5);
+  image(doorbell, width/4,height/30,204/5,203/5);
+  image(sleigh,width/4,height/12,528/5,151/5);
+  image(strudel,width/2,height/30,475/4,221/4);
+  image(rose,width/1.5,height/80,389/7,698/7);
+  image(kettle,width-545/7,height/80,545/7,689/7);
 
   //BOTTOM
-  image(package,width/10,height/1.18,576/5,526/5);
-  image(pony,width/4,height/1.18,473/5,597/5);
-  image(kitten,width/3,height/1.18,877/5,509/5);
-  image(mittens,width/2,height/1.18,1088/5,739/5);
-  image(schnitzel,width/1.2,height/1.18,447/5,448/5);
+  image(package,0,height/1.18,576/5.5,526/5.5);
+  image(pony,width/4,height/1.18,473/5.5,597/5.5);
+  image(kitten,width/2,height/1.18,877/6,509/6);
+  image(mittens,width/2,height/1.18,1088/7.5,739/7.5);
+  image(schnitzel,width-447/4,height/1.18,447/4.5,448/4.5);
 }
