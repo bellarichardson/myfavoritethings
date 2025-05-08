@@ -1,5 +1,10 @@
 @import url("https://use.typekit.net/jts0xdz.css");
 
+@font-face {
+  font-family:"scale-variable";
+  src:url("https://use.typekit.net/af/60a102/000000000000000077542086/31/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"),url("https://use.typekit.net/af/60a102/000000000000000077542086/31/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"),url("https://use.typekit.net/af/60a102/000000000000000077542086/31/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-display:auto;font-style:normal;font-weight:200 900;font-stretch:normal;
+  }
 
 html, body {
   margin: 0;
@@ -19,12 +24,14 @@ canvas {
   z-index: 5; 
 }
 
+
+
 p{
   position: absolute;
   right: 13%; 
   top: 85%; 
   z-index: 5; 
-  font-family:'scale-variable'; 
+  font-family:"scale-variable"; 
   color: #416D40;
 }
 
