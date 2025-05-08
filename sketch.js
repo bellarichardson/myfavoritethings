@@ -34,7 +34,7 @@ function draw() {
   textSize(20);
   fill('#fdf5e2');
   textAlign(NORMAL)
-  text('the sound of music',120, 650);
+  text('"the sound of music"',120, 650);
 
   textFont('filmotype-carmen');
   textSize(90);
