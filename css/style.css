@@ -23,6 +23,9 @@ canvas {
   width: 7%; 
   z-index: 5; 
 }
+.notes:hover{
+  scale:1.1;
+}
 
 
 
