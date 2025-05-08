@@ -19,6 +19,15 @@ canvas {
   z-index: 5; 
 }
 
+p{
+  position: absolute;
+  right: 13%; 
+  top: 85%; 
+  z-index: 5; 
+  font-family:'scale-variable'; 
+  color: #416D40;
+}
+
 #one{
   background-color: #B1D374;
 }

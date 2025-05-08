@@ -1,5 +1,7 @@
 let backgroundImage;
 
+let timer;
+
 let textColors = ['#fdf5e2', '#F29F3B', '#51DBDD', '#EFEAB9', '#E6645E', '#B1D374', '#AB83F2'];
 let colorIndex = 0;
 
@@ -43,6 +45,8 @@ function windowResized(){
 
 function setup() {
   createCanvas(981, windowHeight);
+
+  timer = setTimeout(changePage, 20000);
 
   frameRate(12);
 
@@ -251,4 +255,9 @@ function mouseReleased() {
   draggingKitten = false;
   draggingMittens = false;
   draggingSchnitzel = false;
+}
+
+
+function changePage() {
+  window.location.href = "index.html"; 
 }
